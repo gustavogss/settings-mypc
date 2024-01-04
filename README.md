@@ -54,6 +54,8 @@
    ## Instalação e Configuração do Docker e Docker-Compose:
 
    ## Instalação e Configuração do Ambiente de Desenvolvimento (VSCode):
+
+   ### Implatanção do ambiente de desenvolvimento por stack, para evitar conflitos de plugins e ter uma melhor experiência e produtividade com configurações especificas para cada ambiente 
  
    ***Profile React***
 
