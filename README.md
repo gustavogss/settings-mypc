@@ -45,7 +45,7 @@
    ## Instalação de utilitários:
    - [Zoom](#)
    - [Discord](#)
-   - [What app](#)
+   - [Whats app](#)
       
    ## Instalação e Configuração do Node (nvm): 
 
