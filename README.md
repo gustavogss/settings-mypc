@@ -44,7 +44,7 @@
 
    ***Instalação e Configuração do Java***
 
-   ***Instalação e Configuração do Docker***
+   ***Instalação e Configuração do Docker***  
 
    ***Instalação e Configuração do Ambiente de Desenvolvimento***
 
@@ -53,6 +53,14 @@
    ***Instalação e Configuração do React Native***
 
    ***Instalação e Configuração do Flutter***
+
+   ***Instalação e Configuração do MySQL com Docker***
+
+   ***Instalação e Configuração do MongoDB com Docker***
+
+   ***Instalação e Configuração do Mac com Docker***
+
+   ***Instalação do Gitflow e Processos de padronização de Commits***
 
    
    
