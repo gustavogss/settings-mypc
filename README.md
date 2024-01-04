@@ -38,29 +38,31 @@
     - Clique em Adicionar SSH Key
     - Pronto, a partir de agora, ficará mais fácil fazer os seus clones e pull requests através do SSH
    
-   ***Instalação e Configuração do ZSH***
+   ## Instalação e Configuração do ZSH
+
+   ## Atualização dos pacotes do snap
       
-   ***Instalação e Configuração do Node***
+   ## Instalação e Configuração do Node
 
-   ***Instalação e Configuração do Java***
+   ## Instalação e Configuração do Java
 
-   ***Instalação e Configuração do Docker***  
+   ## Instalação e Configuração do Docker e Docker-Compose  
 
-   ***Instalação e Configuração do Ambiente de Desenvolvimento***
+   ## Instalação e Configuração do Ambiente de Desenvolvimento (VSCode)
 
-   ***Instalação e Configuração do Android***
+   ## Instalação e Configuração do Android Studio
 
-   ***Instalação e Configuração do React Native***
+   ## Instalação e Configuração do React Native
 
-   ***Instalação e Configuração do Flutter***
+   ## Instalação e Configuração do Flutter
 
-   ***Instalação e Configuração do MySQL com Docker***
+   ## Instalação e Configuração do MySQL com Docker
 
-   ***Instalação e Configuração do MongoDB com Docker***
+   ## Instalação e Configuração do MongoDB com Docker
 
-   ***Instalação e Configuração do Mac com Docker***
+   ## Instalação e Configuração do Mac com Docker
 
-   ***Instalação do Gitflow e Processos de padronização de Commits***
+   ## Instalação do Gitflow e Processos de padronização de Commits
 
    
    
