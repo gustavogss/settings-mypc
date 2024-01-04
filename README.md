@@ -37,7 +37,23 @@
     - Cole a chave que você copiou na descrição e dê um titulo para ela tipo ***pc-linux***
     - Clique em Adicionar SSH Key
     - Pronto, a partir de agora, ficará mais fácil fazer os seus clones e pull requests através do SSH
+   
+   ***Instalação e Configuração do ZSH***
       
- 10. 
+   ***Instalação e Configuração do Node***
+
+   ***Instalação e Configuração do Java***
+
+   ***Instalação e Configuração do Docker***
+
+   ***Instalação e Configuração do Ambiente de Desenvolvimento***
+
+   ***Instalação e Configuração do Android***
+
+   ***Instalação e Configuração do React Native***
+
+   ***Instalação e Configuração do Flutter***
+
+   
    
  
