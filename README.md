@@ -104,21 +104,20 @@
          SPACESHIP_CHAR_SYMBOL=">"
          SPACESHIP_CHAR_SUFFIX=" "
         ```
-      -  Salve o arquivo, feche. Feche o terminal e abra novamente para ver as atualizações
-        
-   5. Indico reinicializar a máquina para ela pegar as novas atualizações.
-      
-   6. Abra um terminal e veja as novas atualizações.
+      -  Salve o arquivo, feche. Feche o terminal e abra novamente para ver as atualizações      
+            
+   5. Abra um terminal para ver as novas atualizações.
       
    7. Pronto agora você não utilizará mais o shell bash, e sim o zhrc, para adicionar as novas configurações a partir de então, basta digitar o comando:
       ```
       sudo gedit ~/.zshrc
       ```    
 
-   ## Instalação de utilitários:
-   - [Zoom](#)
-   - [Discord](#)
-   - [Whats app](#)
+   ## Instale os aplicativos através da Central de Aplicativos do Ubuntu:
+   - Zoom 
+   - Discord
+   - Whats app
+   - Telegram
       
    ## Instalação e Configuração do Node (nvm): 
 
