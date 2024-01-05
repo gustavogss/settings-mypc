@@ -163,7 +163,7 @@
        node18 -> Para a versão 18 do node
        ```
        ```
-       node21 -> Para a versão 21 do node
+       node20 -> Para a versão 20 do node
        ```      
 
    ## Instalação e Configuração do Java (sdkman):
