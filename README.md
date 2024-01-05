@@ -149,6 +149,7 @@
       alias node16="nvm alias default v16.20.2"
       alias node18="nvm alias default v18.19.0"
       alias node21="nvm alias default v21.10.0"
+      
        ```
    11. Salve e feche o arquivo.
        
