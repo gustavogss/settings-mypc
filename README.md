@@ -144,8 +144,7 @@
    9. Para mudar de versão de uma forma mais pratica, defina aliases no final de seu arquivo zshrc.
        
    10. Com o arquivo zshrc aberto, no final de tudo, acrescente as linhas:
-       ```
-       ##aliases
+       ```       
       alias node14="nvm alias default v14.21.3"
       alias node16="nvm alias default v16.20.2"
       alias node18="nvm alias default v18.19.0"
