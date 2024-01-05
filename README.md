@@ -120,6 +120,52 @@
    - Telegram
       
    ## Instalação e Configuração do Node (nvm): 
+   1. Instale o nvm com o comando:
+      ```
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+      ```
+   2. Instale as variaveis de ambiente do nvm digitando o comando no terminal:
+      ```
+      export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+      ```
+   3. Para verificar se tudo ocorreu bem digite o comando ***nvm -v***, ele irá mostrar a versão do nvm que instalou
+      
+   4. Para ver as versões remotas do node que temos, digite o comando:
+      ```
+      nvm ls-remote
+      ```
+   5. Para instalar a versão para digitar:
+      ```
+      nvm install v18.19.0
+      ```
+   7. Instale as versões LTS de longo prazo. Eu instalei as versões: v20.10.0, v18.19.0, v16.20.2, v14.21.3
+      
+   9. Para mudar de versão de uma forma mais pratica, defina aliases no final de seu arquivo zshrc.
+       
+   10. Com o arquivo zshrc aberto, no final de tudo, acrescente as linhas:
+       ```
+       ##aliases
+      alias node14="nvm alias default v14.21.3"
+      alias node16="nvm alias default v16.20.2"
+      alias node18="nvm alias default v18.19.0"
+      alias node21="nvm alias default v21.10.0"
+       ```
+   11. Salve e feche o arquivo.
+       
+   13. Toda vez que vou mudar de versão, basta digitar no seu terminal:
+       ```
+       node14 -> Para a versão 14 do node
+       ```
+       ```
+       node16 -> Para a versão 16 do node
+       ```
+       ```
+       node18 -> Para a versão 18 do node
+       ```
+       ```
+       node21 -> Para a versão 21 do node
+       ```      
 
    ## Instalação e Configuração do Java (sdkman):
 
