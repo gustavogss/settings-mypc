@@ -37,10 +37,83 @@
     - Cole a chave que você copiou na descrição e dê um titulo para ela tipo ***pc-linux***
     - Clique em Adicionar SSH Key
     - Pronto, a partir de agora, ficará mais fácil fazer os seus clones e pull requests através do SSH
-   
+      
+   ## Atualização dos pacotes do snap:
+   - Atualizando os pacotes do sistema operacional e o snap-store com uma linha de comando:
+   ```
+   sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean && sudo snap refresh
+   ```
    ## Instalação e Configuração do ZSH:
 
-   ## Atualização dos pacotes do snap:
+   1. Instalando o zsh:
+      ```
+       sudo apt install zsh
+      ```
+   2.  Verifique a versão do zsh, para ver se tudo ocorreu bem:
+      ```
+      zsh --version
+      ```
+   3. Instale o Oh My Zsh:
+      - Primeiro instale o curl ***sudo apt install curl***
+      - Depois instale o my zsh:
+      ```
+      sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      ```
+      - Ele te perguntará se deseja que o zsh se torne o shell padrão: digite Y e aperte <ENTER>
+      - Feche o terminal e abra um novo para ver as atualizações. Se não houver alteração, reinicie seu computador.
+      - Para facilitar a instalação de plugins, instale o Zinit com o comando:
+        ```
+        $ sh -c "$(curl -fsSL https://git.io/zinit-install)"
+        ```
+      - Após a instalação do Zinit, abra seu zshrc com o comando: ***sudo gedit ~/.zshrc*** e adicione as seguintes linhas no final do arquivo:
+        ```
+        zinit light zdharma/fast-syntax-highlighting
+        zinit light zsh-users/zsh-autosuggestions
+        zinit light zsh-users/zsh-completions
+        ```
+      - Salve o arquivo e feche, feche o terminal, e abra novamente o terminal para as atualizações serem instaladas.
+      - Para mudar o tema do shell para o spaceship clone o repositorio com o comando:        
+        ```
+        git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1      
+        ```
+      - Crie um link simbólico:
+        ```
+        ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+        ```
+      - Abra novamente seu arquivo .zshrc ***sudo gedit ~/.zshrc***
+      - E na linha ZSH_THEME, adicone o nome do tema:
+        ```
+        ZSH_THEME="spaceship"
+        ```
+      -  No final do arquivo coloque essas configurações:
+        ```
+        SPACESHIP_PROMPT_ORDER=(
+        user          # Username section
+        dir           # Current directory section
+        host          # Hostname section
+        git           # Git section (git_branch + git_status)
+        hg            # Mercurial section (hg_branch  + hg_status)
+        exec_time     # Execution time
+        line_sep      # Line break
+        jobs          # Background jobs indicator
+        exit_code     # Exit code section
+        char          # Prompt character
+         )
+         SPACESHIP_USER_SHOW=always
+         SPACESHIP_PROMPT_ADD_NEWLINE=false
+         SPACESHIP_CHAR_SYMBOL=">"
+         SPACESHIP_CHAR_SUFFIX=" "
+        ```
+      -  Salve o arquivo, feche. Feche o terminal e abra novamente para ver as atualizações
+        
+   5. Indico reinicializar a máquina para ela pegar as novas atualizações.
+      
+   6. Abra um terminal e veja as novas atualizações.
+      
+   7. Pronto agora você não utilizará mais o shell bash, e sim o zhrc, para adicionar as novas configurações a partir de então, basta digitar o comando:
+      ```
+      sudo gedit ~/.zshrc
+      ```    
 
    ## Instalação de utilitários:
    - [Zoom](#)
