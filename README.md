@@ -207,7 +207,7 @@
       ```
       fvm releases
       ```
-   6. ***Atenção*** Instale a versão que realmente você for usar, caso haja algum projeto com versões antigas do flutter. Cada versão dessas toma 1GB de espaço em disco.    Caso contrário é preferível não instalar nada, a stable você já está usando.    
+   6. ***Atenção*** Instale a versão que realmente você for usar, caso haja algum projeto com versões antigas do flutter. Cada versão dessa toma 1GB de espaço em disco.    Caso contrário é preferível não instalar nada, a stable você já está usando.    
 
    ## Instalação e Configuração do MySQL com Docker:
 
