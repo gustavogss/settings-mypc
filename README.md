@@ -165,7 +165,7 @@
        ```
        node20 -> Para a versão 20 do node
        ```      
-
+     
    ## Instalação e Configuração do Java (sdkman):
 
    ## Instalação e Configuração do Docker e Docker-Compose:
@@ -187,6 +187,27 @@
    ## Instalação e Configuração do React Native:
 
    ## Instalação e Configuração do Flutter:
+
+   ## Instalação do FVM (Gerenciador de versões do Flutter):
+   1. Para ativar o gerenciador de pacotes do Flutter, execute o comando no seu terminal:
+      ```
+      dart pub global activate fvm
+      ```
+   2. Depois insira no seu arquivo zshrc, o caminho da variável de ambiente:
+      ```
+      export PATH="$PATH":"$HOME/.pub-cache/bin"
+      ```
+   3. Salve o arquivo, feche. Feche o terminal, e abra novamente, e digite ***fvm --version***, para ver a versão do fvm.
+            
+   4. Crie uma pasta na sua home /fvm, para salvar as versões do flutter na sua máquina, e digite o comando:
+      ```
+      fvm config --cache-path /fvm
+      ```
+   5. Para saber quais as versões que estão disponiveis para instalar. Basta digitar o comando:
+      ```
+      fvm releases
+      ```
+   6. ***Atenção*** Instale a versão que realmente você for usar, caso haja algum projeto com versões antigas do flutter. Cada versão dessas toma 1GB de espaço em disco.    Caso contrário é preferível não instalar nada, a stable você já está usando.    
 
    ## Instalação e Configuração do MySQL com Docker:
 
