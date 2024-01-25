@@ -199,7 +199,7 @@
    6. Abra seu arquivo zshrc, no final de tudo, acrescente as linhas:
       ```
       alias java8="sdk default java 8.0.392-amzn"
-      alias java11="sdk default java 11.0.21-amzn"
+      alias java11="sdk default java 11.0.22-amzn"
       alias java17="sdk default java 17.0.9-amzn"
       alias java21="sdk default java 21.0.1-amzn"
       ```
