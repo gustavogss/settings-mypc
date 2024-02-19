@@ -221,20 +221,14 @@
       ```
       sdk list java
       ```
-   5.  Abra um outro terminal para você instalar as versões: 21, 17, 11 e 8
-      
-      ```
-      sdk install java 21.0.2-amzn
-      ```
-      ```
-      sdk install java 17.0.10-amzn 
-      ```
-      ```
-      sdk install java 11.0.22-amzn
-      ```
-      ```
+   5.  Abra um outro terminal para você instalar as versões: 21, 17, 11 e 8            
+           
+      sdk install java 21.0.2-amzn   
+      sdk install java 17.0.10-amzn   
+      sdk install java 11.0.22-amzn     
       sdk install java 8.0.402-amzn
-      ```
+      
+      
    7. Abra seu arquivo zshrc, no final de tudo, acrescente as linhas:
       
       ```
@@ -256,8 +250,8 @@
        java17 -> Para a versão 17 do java
        ```
        ```
-       java21 -> Para a versão 21 do java      ```      
-       
+       java21 -> Para a versão 21 do java
+       ```         
 
    ## Instalação e Configuração do Docker e Docker-Compose:
 
