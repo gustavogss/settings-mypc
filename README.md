@@ -222,6 +222,7 @@
       sdk list java
       ```
    5.  Abra um outro terminal para você instalar as versões: 21, 17, 11 e 8
+      
       ```
       sdk install java 21.0.2-amzn
       ```
@@ -234,16 +235,17 @@
       ```
       sdk install java 8.0.402-amzn
       ```
-   6. Abra seu arquivo zshrc, no final de tudo, acrescente as linhas:
+   7. Abra seu arquivo zshrc, no final de tudo, acrescente as linhas:
+      
       ```
       alias java8="sdk default java 8.0.392-amzn"
       alias java11="sdk default java 11.0.22-amzn"
       alias java17="sdk default java 17.0.9-amzn"
       alias java21="sdk default java 21.0.1-amzn"
       ```
-   7. Salve, feche todos os terminais abertos, e vamos testar agora:    
+   9. Salve, feche todos os terminais abertos, e vamos testar agora:    
   
-   8. Toda vez que vou mudar de versão, basta digitar no seu terminal:
+   10. Toda vez que vou mudar de versão, basta digitar no seu terminal:
        ```
        java8 -> Para a versão 8 do java
        ```
