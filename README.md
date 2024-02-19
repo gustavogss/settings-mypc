@@ -118,6 +118,44 @@
    - Discord
    - Whats app
    - Telegram
+   - VSCode
+
+   ## Configurações do VSCode:
+   - settings.json:
+     ```
+        {
+          "workbench.iconTheme": "material-icon-theme",
+          "workbench.colorTheme": "Dracula",
+          "tabnine.experimentalAutoImports": true,
+          "editor.fontFamily": "'Fira Code'",
+          "editor.fontLigatures": true,
+          "[javascriptreact]": {
+           "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "[html]": {
+              "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "explorer.compactFolders": false,
+          "[typescriptreact]": {
+           "editor.defaultFormatter": "vscode.typescript-language-features"
+          },
+          "editor.formatOnSave": true,
+          "[css]": {
+              "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "workbench.productIconTheme": "fluent-icons",
+          "editor.fontSize": 16,
+          "editor.lineHeight": 26,
+          "editor.tabSize": 2,
+          "emmet.syntaxProfiles": {
+           "javascript":"jsx"
+          },
+          "emmet.includeLanguages": {
+              "javascript":"javascriptreact"
+          },
+    
+         }
+     ```
       
    ## Instalação e Configuração do Node (nvm): 
    1. Instale o nvm com o comando:
