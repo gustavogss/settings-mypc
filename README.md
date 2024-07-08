@@ -7,8 +7,9 @@
 ***Adicionando a chave SSH***
 1. Abra o seu terminal e digite o comando abaixo:
    ```
-    ssh-keygen -t rsa -b 4096 -C "gustavogss.dev@gmail.com"
-   ```
+    ssh-keygen -t rsa -b 4096 -C "email@email.com.br" -f ~/.ssh/id_rsa
+    ```   
+      
 2. Durante o processo irá aparecer escrito no terminal ***Enter a file in which to save the key***, basta pressione Enter para aceitar a localização padrão /home/you/.ssh/id_rsa   
 3. Agora digite uma senha segura e confirme digitando novamente a mesma senha   
 4. Ele criará duas chaves SSH dentro do arquivo ***cd ./ssh***, uma chave privada id_rsa e outra pública id_rsa.pub
@@ -21,9 +22,20 @@
     ```
     ssh-add ~/.ssh/id_rsa
     ```
-    - Caso esteja dentro da pasta da chave basta digitar: ***ssh-add id_rsa***
+       
+  8. Caso precise adicionar uma outra chave em uma mesma máquina:
+      ```
+       ssh-keygen -t rsa -b 4096 -C "email2@email.com.br" -f  ~/.ssh/id_rsa_2
+      ```
       
- 8. Adicionando a chave SSH na sua conta do GitHub:
+   - E depois é só seguir os mesmo passos anteriores:
+     ```
+      eval "$(ssh-agent -s)"
+     
+      ssh-add ~/.ssh/id_rsa_2
+     ```
+      
+ 9. Adicionando a chave SSH na sua conta do GitHub:
     - No linux usamos um comando para copiar nossa chave. Funciona como um Ctrl+C e Ctrl+V. Que é o xclip, para instalá-lo digitamos o comando no terminal do linux:
       ```
       sudo apt-get install xclip
