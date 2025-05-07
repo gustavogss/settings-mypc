@@ -267,6 +267,69 @@
 
    ## Instalação e Configuração do Docker e Docker-Compose:
 
+   - Desinstale versões anteriores:
+     ```
+     sudo apt-get remove docker* containerd runc
+     ```
+   - Instale dependências iniciais:
+     ```
+      sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+     ```
+   - Adicione a chave pública:
+     ```
+     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+     ```
+   - Adicone o repositório remoto no apt:
+     ```
+     echo \
+     "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \  |  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null  
+     ```    
+   - Atualize os pacotes:
+     ```
+     sudo apt-get update
+     ```
+   - Instale as últimas versões:
+     ```
+     sudo apt-get install docker-ce docker-ce-cli containerd.io
+     ```
+   - Adicione seu usuário ao grupo de usuários Docker
+     ```
+     sudo groupadd docker
+     ```
+   - Adicione seu usuário a este novo grupo
+     ```
+     sudo usermod -aG docker $USER
+     ```
+   - Ative as alterações realizadas nos grupos
+     ```
+     newgrp docker
+     ```
+   - Verifique o status do docker
+     ```
+     sudo systemctl status docker
+     ```
+   - Habilite o daemon do Docker para iniciar durante o boot:
+     ```
+     sudo systemctl enable docker
+     ```
+   - Instale o Docker Compose:
+     ```
+     sudo curl -L "https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+     ```
+   - Permissão de execução para o Docker compose:
+     ```
+     sudo chmod +x /usr/local/bin/docker-compose
+     ```
+   - Verifique a versão do Docker Compose:
+     ```
+     docker-compose --version
+     ```
+
    ## Instalação e Configuração do Ambiente de Desenvolvimento (VSCode):
 
    ### Implatanção do ambiente de desenvolvimento por stack, para evitar conflitos de plugins e ter uma melhor experiência e produtividade com configurações especificas para cada ambiente 
